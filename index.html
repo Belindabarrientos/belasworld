@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
        <head>
-        <title>Change H1 Font Color</title>
-        
+        <title>swim in swamps</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="About" href="https://en.wikipedia.org/wiki/Animal">
+        <link rel="icon" href="image/faviconibis.png" type="image/png">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+
+            var audio = $("#sound1")[0];
+
+            document.getElementById("gator").addEventListener("mouseover", mouseOver);
+
+            function mouseOver() {
+              audio.play();
+            }
+
+            document.getElementById("gator").addEventListener("mouseout", mouseOut);
+
+            function mouseOut() {
+              audio.pause();
+            }
+        </script>
       
     </head>
+    
     <body>
-      <title>Change Font</title>
-          <link rel="stylesheet" type="text/css" href="styles.css">
-      <p>        <h1 style="color: rgb(222, 222, 222);">swimming through the swamps</h1></p>
+     <a class="about"
+     href="./about.html">About</a>
+    
+
+     <h1 id="swimmingtext">swimming through the swamps</h1>
+     
+     <div class="button1">
+        <a href="venture.html" >venture the swamps</a>
+     </div>
+
+      
+     
+
+     
+
+
+
           
-    </body>
-    </html>
+    
 
 
        
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
 
 
-</head>
-<style>
-    /* Style for the horizontal list */
-    ul.horizontal-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex; /* Display items horizontally */
-    }
-  
-    /* Style for list items */
-    ul.horizontal-list li {
-      margin-right: 10px; /* Add space between words */
-    color: rgb(220, 220, 220); /* Change font color to red */
-    }
-  </style>
-  </head>
-  <body>
   
   
-  <!-- Horizontal list -->
-  <ul class="horizontal-list">
-    <li>about us</li>
-    <li>venture the swamps</li>
-    <li> a look upclose </li>
+  
   
 
-  </ul>
-  
-<body>
  
-    <video autoplay loop muted>
-        <source src="gatorvideo.mp4" type="video/mp4">
+   <video autoplay loop muted id="gator" class="buttonSound">
+        <source src="video/gatorvideo_updated.mp4" type="video/mp4">
+        <source src="video/gatorvideo_updated.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
+
+
+
+    <audio id="sound1">
+        <source src="sounds/gator_louder.mp3" type="audio/mp3">
+        <source src="sounds/gator_louder.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+     
+   
     
 </body>
 
